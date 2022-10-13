@@ -9,7 +9,19 @@ del usuario
 git config --global user.name "CarlosLlanilloAntolin"
 git config --global user.email "carlos.llanilloantolin@iesmiguelherrero.com"
 ```
-
 ![GlobalConfig](./imagenes/globalConf.png)
 
-## Add
+## Añadir fichero y primer commit
+```
+mkdir ejemplo.txt
+git add ejemplo.txt
+git commit -am "Creado el fichero ejemplo.txt"
+git push
+```
+![GlobalConfig](./imagenes/createFile.png)
+
+## Editar fichero
+```
+git commit -am "Cambiado el fichero ejemplo.txt";
+git push
+```
