@@ -19,4 +19,7 @@ privado.txt
 privada
 ```
 Y ahora simplemente cuando subamos un commit nuevo estos archivos no se subiran
-![misFicheros](./imagenes/ficheros.png) ![miRepositorio](./imagenes/repositorio.png)
+###
+![misFicheros](./imagenes/ficheros.png) 
+###
+![miRepositorio](./imagenes/repositorio.png)
