@@ -2,43 +2,21 @@
 
 ## Explicacion comandos git
 
-###Global config
-Configura las variables del nombre y usuario para todos los repositorios 
-del usuario
+### Archivo .gitignore
+Creamos una carpeta **privada** y un fichero **privado.txt**
 ```
-git config --global user.name "CarlosLlanilloAntolin"
-git config --global user.email "carlos.llanilloantolin@iesmiguelherrero.com"
+mkdir privada
+nano privado.txt
 ```
-![GlobalConfig](./imagenes/globalConf.png)
-
-## Añadir fichero y primer commit
+Despues creamos el fichero .gitignore
 ```
-mkdir ejemplo.txt
-git add ejemplo.txt
-git commit -am "Creado el fichero ejemplo.txt"
-git push
+nano .gitignore
 ```
-![GlobalConfig](./imagenes/createFile.png)
-
-## Editar fichero
-Primero le cambiamos el contenido al archivo y despues subimos los cambios
-a nuestro repositorio
+Y añadimos los ficheros que queremos ocultarle a git
 ```
-git commit -am "Cambiado el fichero ejemplo.txt";
-git push
+# Elementos a ignorar
+privado.txt
+privada
 ```
-
-## Cambiar el nombre con git mv
-```
-git mv ejemplo.txt ejemplo2.txt
-git commit -am "Cambiado el nombre del fichero de ejemplo a ejemplo2"
-git push
-```
-
-## Borrando el fichero de git
-```
-git rm ejemplo2.txt
-git commit -am &quot;Borrado el fichero ejemplo2&quot;
-git push
-```
-
+Y ahora simplemente cuando subamos un commit nuevo estos archivos no se subiran
+![misFicheros](./imagenes/ficheros.png) ![miRepositorio](./imagenes/repositorio.png)
